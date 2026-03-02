@@ -1,0 +1,349 @@
+/*achievement*/
+.nav-link:hover {
+    background-color: transparent !important;
+    color: inherit !important;
+     display: flex;
+  align-items: center;   /* vertical center */
+  justify-content: center; /* horizontal center */
+  gap: 8px; /* spacing between image & text */
+}
+
+.nav-avatar {
+  width: 50px;          /* adjust size */
+  height: 50px;
+  border-radius: 10px;   /* circle */
+  overflow: hidden;     /* clip overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid ;
+    padding: 3px;
+    background: #F9DCDE;
+}
+
+.nav-photo:hover{
+	opacity: 0.6;
+	transition: 0.2s;
+}
+
+.recorners-avatar{
+  border-radius: 15px;
+  display: flex;               /* enable flexbox */
+  justify-content: center;     /* horizontal center */
+  align-items: center;         /* vertical center */         
+     height: 35px;
+
+    
+}
+
+@media (max-width: 768px) {
+	.rcorners1 {
+		margin:1%;
+	}
+	
+}
+
+.nav-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* crop nicely */
+      border-radius: 5px;   /* circle */
+
+}
+
+.rcorners1 {
+  border-radius: 15px;
+  background: #F9DCDE;
+  border: 1px solid;
+  margin-right: 15px;
+  width: 150px;
+  height: 35px;
+
+  display: flex;               /* enable flexbox */
+  justify-content: center;     /* horizontal center */
+  align-items: center;         /* vertical center */
+
+  font-size: 12px;
+  gap: 8px;                    /* space between avatar & text */
+  text-align: center;          /* keep text centered */
+}
+
+
+h1 { font-size: 48px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+p  { font-size: 16px; }
+
+.rcorners1:hover {
+  background: white !important;
+  border-radius: 15px;
+  text-decoration: underline;
+  transition: 0.3s;
+  font-size: 13px;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(167, 167, 203) !important;
+  color: white !important;
+  transition: 1.5s;
+}
+
+.title { font-size: 20px; text-align: left; margin-left:10px; }
+
+.main {
+  background: linear-gradient(to bottom, #F9DCDE, #A7B0CB);
+}
+
+.box1 {
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.43);
+  border: 1px solid;
+  text-align: center;
+}
+
+.bg-blue   { background: rgb(167, 167, 203)!important; }
+.bg-pink   { background: #F9DCDE; }
+.bg-purple { background: #CBC0CF; }
+
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+background: linear-gradient(to bottom, #F9DCDE, #A7B0CB);
+background-attachment: fixed;
+font-family: Arial, sans-serif;
+}
+
+
+
+
+.title-2 {
+    text-align: center;
+    margin-bottom: 60px;
+    color: #333;
+
+}
+
+.title h1 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 95%;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+    justify-content: flex-end;
+}
+
+.timeline-item:nth-child(even) {
+    justify-content: flex-start;
+}
+
+.content-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.timeline-item:nth-child(odd) .content-group {
+    flex-direction: row-reverse;
+}
+
+.timeline-item:nth-child(even) .content-group {
+    flex-direction: row;
+}
+
+.photo-container {
+    width: 280px;
+    height: 160px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    padding: 15px 25px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    min-width: 140px;
+    text-align: center;
+}
+
+.member-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.debut-date {
+    font-size: 14px;
+    color: #666;
+    letter-spacing: 0.5px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    border: 4px solid #e6b8c4;
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item {
+        justify-content: flex-start !important;
+        padding-left: 60px;
+    }
+
+    .timeline-item:nth-child(odd) .content-group,
+    .timeline-item:nth-child(even) .content-group {
+        flex-direction: row;
+    }
+
+    .photo-container {
+        width: 200px;
+        height: 120px;
+    }
+
+    .info-box {
+        min-width: 120px;
+    }
+
+    .timeline-dot {
+        left: 30px;
+    }
+}
+
+/*footer*/
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Footer */
+/* 整个 footer */
+.site-footer {
+  background: white;
+  padding: 1%;
+  font-family: Arial, sans-serif;
+}
+
+/* 图片 */
+.footer-logo{
+
+	justify-content: end;
+	
+}
+
+.footer-logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* 链接列 */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center; /* 水平居中 */
+
+   
+}
+
+.footer-column {
+ 
+  padding:15px;
+    
+
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.footer-column li {
+  margin: 0.25rem 0;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.footer-column a:hover {
+  color: rgb(167, 167, 203);
+}
+
+/* 小屏幕优化 */
+@media (max-width: 576px) {
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-column h3 {
+    font-size: 16px;
+  }
+}
